@@ -1,0 +1,17 @@
+// text
+$font: Arial, sans-serif;
+$line-height: 1.5;
+
+// colors
+$color-primary: #333;
+$color-secondary: #eee;
+
+// box model
+$border: solid 1px black;
+
+// layout
+$spacing: 12px;
+$container-width: calc(100% - 20px);
+$container-width-md: calc(100% - 40px);
+$container-width-lg: calc(100% - 80px);
+$container-max-width: 1200px;

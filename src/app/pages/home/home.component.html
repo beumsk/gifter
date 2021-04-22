@@ -1,0 +1,12 @@
+<div class="container">
+  <div>
+    <h1>HOME</h1>
+  </div>
+
+  <div class="grid">
+    <app-card
+      *ngFor="let item of items; let i = index"
+      [item]="item"
+    ></app-card>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="todo" (click)="toggleTodo()">
+  <div class="t" *ngIf="!showTodo">ToDo</div>
+  <ul *ngIf="showTodo">
+    <li *ngFor="let todo of todos; let i = index">
+      {{ todo }}
+    </li>
+  </ul>
+</div>
