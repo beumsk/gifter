@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   font-family: $font;
+  color: $color-primary;
   min-width: 280px;
 }
 
@@ -45,6 +46,7 @@ header nav ul li a {
 
 main {
   min-height: calc(100vh - 34px - 72px);
+  margin-bottom: 40px;
 }
 
 .title__main {
@@ -120,6 +122,84 @@ img {
 img.img__home {
   margin: auto;
   max-width: 600px;
+}
+.cta {
+  margin: 60px 0;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.cta__link {
+  background: $color-blue;
+  color: white;
+  padding: 12px 18px;
+  border: solid 1px $color-blue;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  // animation: cta-move 15s ease-in-out infinite;
+  // animation: background 5s ease-in-out infinite;
+
+  &:hover {
+    background: white;
+    color: $color-blue;
+    animation: none;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 8px;
+    animation: icon 5s ease-in-out infinite;
+  }
+}
+
+@keyframes icon {
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes background {
+  50% {
+    background: #0f95d7;
+  }
+}
+
+@keyframes cta-move {
+  23% {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  24% {
+    margin-left: -10px;
+  }
+  25% {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+  26% {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.categories > a {
+  display: inline-block;
+  margin: 16px 8px 16px 0;
+  padding: 4px 8px;
+  border: solid 1px $color-primary;
+  font-size: 14px;
+  cursor: pointer;
+
+  &.active {
+    color: white;
+    background: $color-primary;
+  }
+  &:not(.active):hover {
+    background: $color-secondary;
+  }
 }
 
 footer {
