@@ -1,0 +1,38 @@
+@import "src/assets/styles/variables";
+
+.cta {
+  margin: 60px 0;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.cta__link {
+  font-size: 1.25rem;
+  padding: 12px 18px;
+  border: solid 1px $color-primary;
+  background: $color-primary;
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background: white;
+    color: $color-primary;
+    animation: none;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 8px;
+    animation: icon 5s ease-in-out infinite;
+  }
+}
+
+@keyframes icon {
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

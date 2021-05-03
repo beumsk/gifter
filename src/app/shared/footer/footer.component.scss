@@ -1,0 +1,12 @@
+@import "src/assets/styles/variables";
+
+footer {
+  background: $color-grey;
+  padding: $spacing;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 1rem;
+}

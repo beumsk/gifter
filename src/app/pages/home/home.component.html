@@ -1,12 +1,17 @@
-<div class="container">
-  <div>
-    <h1>HOME</h1>
-  </div>
+<div class="">
+  <app-title content="Gifter"></app-title>
 
-  <div class="grid">
-    <app-card
-      *ngFor="let item of items; let i = index"
-      [item]="item"
-    ></app-card>
+  <div class="container">
+    <!-- <p>Introduction text</p> -->
+
+    <img
+      src="assets/images/gifter-box.svg"
+      alt="gifter box svg illustration"
+      class="img__home"
+    />
+
+    <app-cta></app-cta>
+
+    <app-cards [items]="highlightedCat"></app-cards>
   </div>
 </div>

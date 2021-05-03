@@ -1,0 +1,26 @@
+<div class="">
+  <app-title content="Search"></app-title>
+
+  <div class="container">
+    <div class="search-bar">
+      <label for="search">Search for any gift idea</label>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="games? books? puzzles?"
+        [value]="searchVal ? searchVal : ''"
+        autofocus
+        #input
+        (keyup)="updateSearch(input.value)"
+      />
+      {{ input.focus() }}
+    </div>
+
+    <app-cards [items]="itemsFiltered"></app-cards>
+
+    <div *ngIf="itemsFiltered.length === 0">
+      <p class="t-center">No results for this search</p>
+    </div>
+  </div>
+</div>

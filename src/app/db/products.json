@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "name": "USB",
+    "desc": "Description",
+    "price": 10,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "tech": true
+    }
+  },
+  {
+    "id": 2,
+    "name": "Video Gag",
+    "desc": "Description",
+    "price": 20,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "funny": true
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mobby Dick",
+    "desc": "Description",
+    "price": 2,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "books": true
+    }
+  },
+  {
+    "id": 4,
+    "name": "Piccolo",
+    "desc": "Description",
+    "price": 3,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "games": true,
+      "funny": true
+    }
+  },
+  {
+    "id": 5,
+    "name": "Spy game",
+    "desc": "Description",
+    "price": 10,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "tech": true,
+      "games": true
+    }
+  },
+  {
+    "id": 6,
+    "name": "Drive",
+    "desc": "Description",
+    "price": 4,
+    "link": "https://amazon.com",
+    "src": "https://via.placeholder.com/400x300",
+    "alt": "placeholder",
+    "cat": {
+      "tech": true,
+      "test": true
+    }
+  },
+  {
+    "id": 7,
+    "name": "",
+    "desc": "",
+    "price": "",
+    "link": "",
+    "src": "",
+    "alt": ""
+  },
+  {
+
+  }
+]

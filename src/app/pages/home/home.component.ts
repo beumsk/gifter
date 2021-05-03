@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../api.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,77 +7,41 @@ import { ApiService } from '../../api.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  itemsk = [
+
+  highlightedCat = [
     {
-      name: 'ITEM 1',
+      name: 'Games',
       desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
+      link: '/products/games',
+      src: 'https://via.placeholder.com/400x300/42a5f5/ffffff?text=Games',
       alt: 'placeholder'
     },
     {
-      name: 'ITEM 2',
+      name: 'Tech',
       desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
+      link: '/products/tech',
+      src: 'https://via.placeholder.com/400x300/64b5f6/ffffff?text=Tech',
       alt: 'placeholder'
     },
     {
-      name: 'ITEM 3',
+      name: '5€',
       desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
+      link: '/products/5',
+      src: 'https://via.placeholder.com/400x300/90caf9/ffffff?text=5€',
       alt: 'placeholder'
     },
-    {
-      name: 'ITEM 4',
-      desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
-      alt: 'placeholder'
-    },
-    {
-      name: 'ITEM 5',
-      desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
-      alt: 'placeholder'
-    },
-    {
-      name: 'ITEM 6',
-      desc: 'description',
-      price: 'price',
-      link: 'https://amazon.com',
-      src: 'https://via.placeholder.com/400x300',
-      alt: 'placeholder'
-    }
   ];
 
-  items = [];
-
   constructor(
-    private apiService: ApiService
+    private titleService: Title,
+    private metaTagService: Meta
   ) { }
 
   ngOnInit(): void {
-    this.getProducts();
-
-    // this.apiService.get().subscribe((data: any[]) => {
-    //   console.log(data);
-    //   this.items = data;
-    // });
-  }
-
-  getProducts(): void {
-    this.apiService.get().subscribe((resp: any) => {
-      console.log(resp);
-      this.items = resp;
-    });
+    this.titleService.setTitle('Gifter, the perfect place to find gifts for your loved ones | Home');
+    this.metaTagService.updateTag(
+      { name: 'description', content: 'Home' }
+    );
   }
 
 }

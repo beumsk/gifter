@@ -1,0 +1,18 @@
+.search-bar {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+
+  label {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+  }
+
+  input {
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}

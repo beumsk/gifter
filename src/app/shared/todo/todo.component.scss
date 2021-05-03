@@ -1,7 +1,7 @@
 @import "./src/assets/styles/variables";
 
 .todo {
-  position: absolute;
+  position: fixed;
   bottom: $spacing;
   right: $spacing;
   background: rgba(256, 256, 256, 1);

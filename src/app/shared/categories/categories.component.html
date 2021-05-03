@@ -1,0 +1,17 @@
+<div class="categories">
+  <a
+    [routerLink]="['/products']"
+    id="all"
+    [ngClass]="catFromRoute ? '' : 'active'"
+  >
+    All
+  </a>
+  <a
+    *ngFor="let cat of cats; let i = index"
+    [routerLink]="['/products', cat]"
+    [id]="cat"
+    [ngClass]="catFromRoute === cat ? 'active' : ''"
+  >
+    {{ cat | titlecase }}
+  </a>
+</div>

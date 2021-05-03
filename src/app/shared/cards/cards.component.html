@@ -1,0 +1,20 @@
+<div class="grid">
+  <div class="grid__item" *ngFor="let item of items; let i = index">
+    <a [href]="item.link || 'https://google.com'" target="_blank"
+      ><figure>
+        <img
+          [src]="item.src || 'https://via.placeholder.com/400x302'"
+          [alt]="item.alt || 'Gifter alt text'"
+          width="320"
+          height="180"
+          loading="lazy"
+        />
+        <figcaption>
+          <p>{{ item.name || "Item name" }}</p>
+          <p *ngIf="item.desc">{{ item.desc }}</p>
+          <p *ngIf="item.price">{{ item.price }}</p>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+</div>

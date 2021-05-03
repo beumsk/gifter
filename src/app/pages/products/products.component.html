@@ -1,0 +1,12 @@
+<div class="">
+  <app-title content="Products"></app-title>
+
+  <div class="container">
+    <app-categories
+      [cats]="cats"
+      [catFromRoute]="catFromRoute"
+    ></app-categories>
+
+    <app-cards [items]="itemsFiltered"></app-cards>
+  </div>
+</div>
