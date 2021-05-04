@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   title = 'gifter';
 
   todos = [
+    'logo with icon + change font',
     'Improve homepage: find gift banner',
     'Improve navigation with products categories?',
     'add categories (topics, price)',
@@ -22,7 +23,6 @@ export class AppComponent implements OnInit {
     'add search filters (price, cat)',
     'add real products',
     'add colors',
-    'pick a font',
     'responsiveness + mobile nav',
     'contact page',
     'create a blog',
@@ -30,7 +30,6 @@ export class AppComponent implements OnInit {
     'breadcrumb',
     'add a sitemap',
     'improve SEO',
-    'G logo with arrow',
     'Social banner',
     'Gifter.link',
     'create amazon affiliate',
