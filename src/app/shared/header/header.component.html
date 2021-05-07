@@ -8,7 +8,21 @@
               [routerLink]="['/']"
               [routerLinkActive]="'active'"
               [routerLinkActiveOptions]="{ exact: true }"
-              >Home</a
+              class="img-link"
+            >
+              <img
+                [src]="'assets/images/gifter-white.svg'"
+                alt="Gifter text logo"
+                class="img-logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              [routerLink]="['/products']"
+              [routerLinkActive]="'active'"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Gifter</a
             >
           </li>
           <li>

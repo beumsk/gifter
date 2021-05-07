@@ -33,13 +33,6 @@ main {
   }
 }
 
-.grid {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 1rem;
-}
-
 img {
   display: block;
   width: 100%;

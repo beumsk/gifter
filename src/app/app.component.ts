@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   todos = [
     'logo with icon + change font',
-    'Improve homepage: find gift banner',
+    'Improve homepage: logo title, find gift banner',
     'Improve navigation with products categories?',
     'add categories (topics, price)',
     'improve search (order by relevance)',
@@ -45,8 +45,8 @@ export class AppComponent implements OnInit {
       { property: 'og:title', content: 'Gifter, the perfect place to find gifts for your loved ones' },
       { property: 'og:description', content: 'Search a wide range of presents on Gifter and find what to offer for any occasion and for anybody.' },
       { property: 'og:url', content: 'https://beumsk.github.io/gifter/' },
-      { property: 'og:image', content: '' },
-      { property: 'og:image:secure_url', content: '' },
+      { property: 'og:image', content: 'https://beumsk.github.io/gifter/src/assets/images/gifter-social.jpg' },
+      { property: 'og:image:secure_url', content: 'https://beumsk.github.io/gifter/src/assets/images/gifter-social.jpg' },
     ]);
   }
 }
