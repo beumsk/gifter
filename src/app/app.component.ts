@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -9,34 +9,34 @@ import { Meta } from '@angular/platform-browser';
 export class AppComponent implements OnInit {
 
   constructor(
-    private metaTagService: Meta
+    private metaTagService: Meta,
+    private titleService: Title
   ) {}
 
   title = 'gifter';
 
   todos = [
-    'logo with icon + change font',
-    'Improve homepage: logo title, find gift banner',
-    'Improve navigation with products categories?',
+    'add colors',
+    'moving blocks',
+    'Improve homepage: find great pictures, add USP',
+    'responsiveness + mobile nav',
+    'improve footer',
+    'create amazon affiliate',
+    'add real products',
+    'Gifter.link',
     'add categories (topics, price)',
     'improve search (order by relevance)',
     'add search filters (price, cat)',
-    'add real products',
-    'add colors',
-    'responsiveness + mobile nav',
     'contact page',
     'create a blog',
     'write posts',
     'breadcrumb',
     'add a sitemap',
     'improve SEO',
-    'Social banner',
-    'Gifter.link',
-    'create amazon affiliate',
-    'lazyloading with loadChildren',
   ];
 
   ngOnInit(): void {
+    this.titleService.setTitle('Gifter, the perfect place to find gifts for your loved ones');
     this.metaTagService.addTags([
       { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'robots', content: 'index, follow' },
@@ -45,8 +45,6 @@ export class AppComponent implements OnInit {
       { property: 'og:title', content: 'Gifter, the perfect place to find gifts for your loved ones' },
       { property: 'og:description', content: 'Search a wide range of presents on Gifter and find what to offer for any occasion and for anybody.' },
       { property: 'og:url', content: 'https://beumsk.github.io/gifter/' },
-      { property: 'og:image', content: 'https://beumsk.github.io/gifter/src/assets/images/gifter-social.jpg' },
-      { property: 'og:image:secure_url', content: 'https://beumsk.github.io/gifter/src/assets/images/gifter-social.jpg' },
     ]);
   }
 }

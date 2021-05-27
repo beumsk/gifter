@@ -10,9 +10,11 @@
           loading="lazy"
         />
         <figcaption>
-          <p>{{ item.name || "Item name" }}</p>
-          <p *ngIf="item.desc">{{ item.desc }}</p>
-          <p *ngIf="item.price">{{ item.price }}</p>
+          <div class="flex-between t-lg">
+            <p>{{ item.name || "Item name" }}</p>
+            <p *ngIf="item.price" class="item__price">{{ item.price }}</p>
+          </div>
+          <p *ngIf="item.desc" class="item__desc">{{ item.desc }}</p>
         </figcaption>
       </figure>
     </a>

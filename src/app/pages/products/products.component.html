@@ -1,5 +1,5 @@
 <div class="">
-  <app-title content="Products"></app-title>
+  <app-title [content]="catFromRoute ? catFromRoute : 'Products'"></app-title>
 
   <div class="container">
     <app-categories

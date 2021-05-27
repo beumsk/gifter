@@ -2,11 +2,34 @@
 
 footer {
   background: $color-grey;
-  padding: $spacing;
-  font-size: 0.875rem;
-  text-align: center;
+  padding: $spacing * 2;
 }
 
-footer p {
-  margin: 1rem;
+footer .footer__lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+footer .copy {
+  margin-top: $spacing * 2;
+  font-size: 0.875rem;
 }

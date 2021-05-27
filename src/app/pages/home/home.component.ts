@@ -7,29 +7,40 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  promoMain = [
+    {
+      title: 'Favorites from Gifter',
+      subtitle: 'Check out the best sellers on Gifter',
+      ctaText: 'Find ideas',
+      ctaEmoji: '🎁',
+      link: '/products/favorites',
+      src: '',
+      alt: 'placeholder'
+    }
+  ];
 
-  highlightedCat = [
+  promoBoxes = [
     {
-      name: 'Games',
-      desc: 'description',
+      title: 'Games',
+      ctaText: 'Find ideas',
       link: '/products/games',
-      src: 'https://via.placeholder.com/400x300/42a5f5/ffffff?text=Games',
+      src: '',
       alt: 'placeholder'
     },
     {
-      name: 'Tech',
-      desc: 'description',
+      title: 'Tech',
+      ctaText: 'Find ideas',
       link: '/products/tech',
-      src: 'https://via.placeholder.com/400x300/64b5f6/ffffff?text=Tech',
+      src: '',
       alt: 'placeholder'
     },
     {
-      name: '5€',
-      desc: 'description',
+      title: '5€',
+      ctaText: 'Find ideas',
       link: '/products/5',
-      src: 'https://via.placeholder.com/400x300/90caf9/ffffff?text=5€',
+      src: '',
       alt: 'placeholder'
-    },
+    }
   ];
 
   constructor(

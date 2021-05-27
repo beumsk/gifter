@@ -1,7 +1,9 @@
 @import "src/assets/styles/variables";
 
 header {
-  background: $color-primary;
+  background: $color-white;
+  border-top: solid 4px $color-primary;
+  border-bottom: solid 1px $color-grey-02;
 }
 
 header .nav-container {
@@ -20,34 +22,92 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
-  height: 50px;
+  height: $header-height;
 }
 
 nav ul li a {
   display: inline-block;
-  padding: 1rem 0;
-  margin-right: 1rem;
   text-decoration: none;
-  color: $color-white;
+  color: $color-text;
 
-  &.icon {
-    padding: 1rem;
-    margin-right: 0;
+  span {
+    display: inline-block;
+    padding: 13px;
+  }
+
+  &.text-link {
+    display: none;
+
+    span {
+      padding: 14px;
+    }
+  }
+
+  &.search-link {
+    display: inline-block;
+  }
+
+  &:hover {
+    background: white;
+    color: $color-primary;
   }
 
   &.active {
     font-weight: bold;
+    color: $color-primary;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li a.text-link {
+    display: inline-block;
+  }
+
+  nav ul li a.icon-link {
+    display: none;
   }
 }
 
 nav ul li a.img-link {
   padding: 0;
+  margin-right: 2 * $spacing;
 
   .img-logo {
     display: block;
-    height: 50px;
+    height: $header-height;
     width: auto;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav ul li.has-sub {
+    position: relative;
+
+    &:hover ul.sub {
+      display: block;
+    }
+  }
+}
+
+nav ul.sub {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: start;
+  background: $color-white;
+  z-index: 100;
+  border: solid 1px $color-grey-02;
+  border-top: none;
+
+  li {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    a {
+      padding: 8px 14px;
+      width: 100%;
+    }
   }
 }

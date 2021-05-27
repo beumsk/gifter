@@ -2,8 +2,8 @@ import { DoCheck, Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
-import products from '../../db/products.json';
-import categories from '../../db/categories.json';
+import products from '@db/products.json';
+import categories from '@db/categories.json';
 
 @Component({
   selector: 'app-products',

@@ -1,17 +1,16 @@
 <div class="">
-  <app-title content="Gifter"></app-title>
-
+  <div class="">
+    <app-promo [items]="promoMain" [fit]="true"></app-promo>
+  </div>
   <div class="container">
-    <!-- <p>Introduction text</p> -->
-
     <img
-      src="assets/images/gifter-box.svg"
-      alt="gifter box svg illustration"
-      class="img__home"
+      src="assets/images/gifter-gradient-text.svg"
+      alt="gifter title logo"
+      class="img__title"
     />
 
-    <app-cta></app-cta>
-
-    <app-cards [items]="highlightedCat" [col]="3"></app-cards>
+    <div class="m-x-3">
+      <app-promo [items]="promoBoxes"></app-promo>
+    </div>
   </div>
 </div>

@@ -11,7 +11,7 @@
               class="img-link"
             >
               <img
-                [src]="'assets/images/gifter-white.svg'"
+                [src]="'assets/images/gifter-gradient.svg'"
                 alt="Gifter text logo"
                 class="img-logo"
               />
@@ -19,19 +19,58 @@
           </li>
           <li>
             <a
-              [routerLink]="['/products']"
+              [routerLink]="['/']"
               [routerLinkActive]="'active'"
               [routerLinkActiveOptions]="{ exact: true }"
-              >Gifter</a
+              class="text-link"
             >
+              <span>Home</span>
+            </a>
+            <a
+              [routerLink]="['/']"
+              [routerLinkActive]="'active'"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="icon-link"
+            >
+              <span class="material-icons">home</span>
+            </a>
+          </li>
+          <li class="has-sub">
+            <a
+              [routerLink]="['/products']"
+              [routerLinkActive]="'active'"
+              class="text-link"
+            >
+              <span>Products</span>
+            </a>
+            <a
+              [routerLink]="['/products']"
+              [routerLinkActive]="'active'"
+              class="icon-link"
+            >
+              <span class="material-icons">card_giftcard</span>
+            </a>
+            <ul class="sub">
+              <li *ngFor="let cat of cats">
+                <a [routerLink]="['/products', cat]">{{ cat }}</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a [routerLink]="['/products']" [routerLinkActive]="'active'"
-              >Products</a
+            <a
+              [routerLink]="['/about']"
+              [routerLinkActive]="'active'"
+              class="text-link"
             >
-          </li>
-          <li>
-            <a [routerLink]="['/about']" [routerLinkActive]="'active'">About</a>
+              <span>About</span>
+            </a>
+            <a
+              [routerLink]="['/about']"
+              [routerLinkActive]="'active'"
+              class="icon-link"
+            >
+              <span class="material-icons">format_quote</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -39,8 +78,12 @@
       <nav class="nav-right">
         <ul>
           <li>
-            <a class="icon" routerLink="/search" routerLinkActive="active">
-              <i class="fa fa-search"></i>
+            <a
+              [routerLink]="['/search']"
+              [routerLinkActive]="'active'"
+              class="search-link"
+            >
+              <span class="material-icons">search</span>
             </a>
           </li>
         </ul>

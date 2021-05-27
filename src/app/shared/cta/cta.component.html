@@ -1,5 +1,6 @@
 <div class="cta">
-  <a class="cta__link" routerLink="products">
-    Find ideas <span title="gifts">🎁</span>
+  <a class="cta__link" [routerLink]="link">
+    {{ text || "missing text" }}
+    <span *ngIf="emoji" title="gifts">{{ emoji }}</span>
   </a>
 </div>

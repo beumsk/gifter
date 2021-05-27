@@ -2,7 +2,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import products from '../../db/products.json';
+import products from '@db/products.json';
 
 @Component({
   selector: 'app-search',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 
-import products from '../../db/products.json';
+import products from '@db/products.json';
 
 @Component({
   selector: 'app-not-found',

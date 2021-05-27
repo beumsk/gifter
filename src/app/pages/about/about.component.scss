@@ -1,1 +1,6 @@
 @import "./src/assets/styles/variables";
+
+img.img__home {
+  margin: 5 * $spacing auto;
+  max-width: 600px;
+}

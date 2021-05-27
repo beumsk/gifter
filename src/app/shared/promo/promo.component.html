@@ -1,0 +1,26 @@
+<div class="grid">
+  <div class="grid__item" *ngFor="let item of items; let i = index">
+    <a [routerLink]="item.link"
+      ><figure>
+        <img
+          [src]="item.src || 'https://via.placeholder.com/400x302'"
+          [alt]="item.alt || 'Gifter alt text'"
+          [ngClass]="fit ? 'fit' : ''"
+          width="320"
+          height="180"
+          loading="lazy"
+        />
+        <figcaption>
+          <p class="title" *ngIf="item.title">{{ item.title }}</p>
+          <p class="subtitle" *ngIf="item.subtitle">{{ item.subtitle }}</p>
+          <app-cta
+            [text]="item.ctaText"
+            [emoji]="item.ctaEmoji"
+            [link]="item.link"
+            *ngIf="item.ctaText"
+          ></app-cta>
+        </figcaption>
+      </figure>
+    </a>
+  </div>
+</div>

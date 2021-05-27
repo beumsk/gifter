@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "USB",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 10,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Video Gag",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 20,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Mobby Dick",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 2,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Piccolo",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 3,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",
@@ -51,7 +51,7 @@
   {
     "id": 5,
     "name": "Spy game",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 10,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",
@@ -64,7 +64,7 @@
   {
     "id": 6,
     "name": "Drive",
-    "desc": "Description",
+    "desc": "Description with way more words to test the layout in certain ways",
     "price": 4,
     "link": "https://amazon.com",
     "src": "https://via.placeholder.com/400x300",

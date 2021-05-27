@@ -1,14 +1,14 @@
 @import "src/assets/styles/variables";
 
 .categories {
-  padding: 12px 0;
+  padding: $spacing 0;
 }
 
 .categories > a {
   display: inline-block;
   margin: 4px 8px 4px 0;
   padding: 4px 8px;
-  border: solid 1px $color-text;
+  border: solid 1px $color-grey-02;
   font-size: 0.875rem;
   cursor: pointer;
   color: $color-text;

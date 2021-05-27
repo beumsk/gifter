@@ -5,10 +5,16 @@ $line-height: 1.5;
 
 // colors
 $color-primary: #2196f3;
+$color-secondary: #42a5f5;
+$color-primary: #64b5f6;
+$color-quaternary: #90caf9;
+$color-cta: #f48fb1;
 $color-text: #333;
+$color-text-2: #757575;
 $color-grey: #eee;
+$color-grey-02: rgba(0, 0, 0, 0.2);
+$color-grey-01: rgba(0, 0, 0, 0.1);
 $color-white: #fff;
-$color-bluesk: #00b0ff;
 
 // box model
 $border: solid 1px black;
@@ -19,3 +25,4 @@ $container-width: calc(100% - 20px);
 $container-width-md: calc(100% - 40px);
 $container-width-lg: calc(100% - 80px);
 $container-max-width: 1200px;
+$header-height: 50px;

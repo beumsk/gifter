@@ -4,21 +4,25 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2 * $spacing;
 
-  &.grid--2 {
-    grid-template-columns: repeat(2, minmax(280px, 1fr));
-  }
-  &.grid--3 {
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
-  }
-  &.grid--4 {
-    grid-template-columns: repeat(4, minmax(280px, 1fr));
-  }
+  // &.grid--2 {
+  //   grid-template-columns: repeat(2, minmax(280px, 1fr));
+  // }
+  // &.grid--3 {
+  //   grid-template-columns: repeat(3, minmax(280px, 1fr));
+  // }
+  // &.grid--4 {
+  //   grid-template-columns: repeat(4, minmax(280px, 1fr));
+  // }
 }
 
 .grid__item {
-  border: solid 1px rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.grid__item a {
+  text-decoration: none;
 }
 
 .grid__item figure {
@@ -28,30 +32,22 @@
 }
 
 .grid__item figcaption {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 2.5rem;
   margin: 0;
-  padding: 0 0.5rem;
-  transition: all 0.5s ease-in-out;
-  background-color: rgba(256, 256, 256, 0.9);
-  border-top: solid 1px rgba(0, 0, 0, 0.2);
-}
-
-.grid__item a:hover figure figcaption,
-.grid__item a:focus figure figcaption {
-  height: 100%;
-  border-top: none;
+  padding: 0.5 * $spacing 1 * $spacing;
+  background-color: $color-white;
+  border-top: solid 1px $color-grey-01;
 }
 
 .grid__item figcaption p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5 * $spacing;
+  margin-bottom: 0.5 * $spacing;
   color: $color-text;
 }
 
-.grid__item figcaption p:first-of-type {
-  line-height: 2.5rem;
-  border-bottom: solid 1px;
+.item__price::after {
+  content: "€";
+}
+
+.grid__item figcaption .item__desc {
+  color: $color-text-2;
 }
