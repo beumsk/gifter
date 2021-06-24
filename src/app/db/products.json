@@ -8,7 +8,8 @@
     "src": "https://via.placeholder.com/400x300",
     "alt": "placeholder",
     "cat": {
-      "tech": true
+      "tech": true,
+      "favorites": true
     }
   },
   {

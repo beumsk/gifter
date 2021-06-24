@@ -1,7 +1,12 @@
 <div class="">
   <div class="">
-    <app-promo [items]="promoMain" [fit]="true"></app-promo>
+    <app-promo
+      [items]="promoMain"
+      [fit]="true"
+      [styles]="'t-white'"
+    ></app-promo>
   </div>
+
   <div class="container">
     <img
       src="assets/images/gifter-gradient-text.svg"
@@ -9,8 +14,18 @@
       class="img__title"
     />
 
-    <div class="m-x-3">
+    <div class="m-b-3">
       <app-promo [items]="promoBoxes"></app-promo>
     </div>
   </div>
+
+  <!-- <div class="promo-text">
+    <div class="container">
+      <p class="quoted">
+        Gifter is your partner for every quick gift idea you need. You will love
+        how fast you will find the right thing to offer your loved ones in any
+        occasion.
+      </p>
+    </div>
+  </div> -->
 </div>

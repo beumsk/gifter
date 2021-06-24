@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
       ctaText: 'Find ideas',
       ctaEmoji: '🎁',
       link: '/products/favorites',
-      src: '',
+      src: 'assets/images/confetti-multicolor.jpg',
       alt: 'placeholder'
     }
   ];

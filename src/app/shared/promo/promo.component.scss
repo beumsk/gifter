@@ -7,12 +7,14 @@
   grid-gap: 2 * $spacing;
 }
 
-.grid__item {
-  border: solid 1px rgba(0, 0, 0, 0.1);
-}
-
 .grid__item a {
   text-decoration: none;
+}
+
+.grid__item:hover ::ng-deep .cta__link {
+  background: white;
+  color: $color-cta;
+  animation: none;
 }
 
 .grid__item figure {
@@ -50,11 +52,17 @@
   .title {
     font-size: 2.5rem;
     font-family: $font-header;
+    &.t-white {
+      color: $color-white;
+    }
   }
   .subtitle {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: $color-text-2;
+    &.t-white {
+      color: $color-white;
+    }
   }
 
   .cta {

@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PromoComponent implements OnInit {
   @Input() items: any;
   @Input() fit: any;
+  @Input() styles: any;
 
   constructor() { }
 

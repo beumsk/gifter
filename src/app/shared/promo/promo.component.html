@@ -11,8 +11,12 @@
           loading="lazy"
         />
         <figcaption>
-          <p class="title" *ngIf="item.title">{{ item.title }}</p>
-          <p class="subtitle" *ngIf="item.subtitle">{{ item.subtitle }}</p>
+          <p class="title" [ngClass]="styles" *ngIf="item.title">
+            {{ item.title }}
+          </p>
+          <p class="subtitle" [ngClass]="styles" *ngIf="item.subtitle">
+            {{ item.subtitle }}
+          </p>
           <app-cta
             [text]="item.ctaText"
             [emoji]="item.ctaEmoji"
